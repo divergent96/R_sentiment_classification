@@ -39,7 +39,7 @@ function(input, output, session) {
     
     cutoff <- input$prediction_proba/100
     
-    temp_pred <- ifelse(temp >= cutoff, "Suicidal","Non-Suicidal")
+    temp_pred <- ifelse(temp >= cutoff, "Distressed","Non-distressed")
     
     color <- ifelse(temp_pred == "Suicidal", "red","green")
     

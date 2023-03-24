@@ -1,0 +1,13 @@
+name: distress_sentiment_classification
+title: distress_sentiment_classification
+username:
+account: yxexz9-susheel-patel
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 8667129
+bundleId: 7004459
+url: https://yxexz9-susheel-patel.shinyapps.io/distress_sentiment_classification/
+when: 1679685322.63314
+lastSyncTime: 1679685322.63315
+asMultiple: FALSE
+asStatic: FALSE

@@ -1,7 +1,8 @@
 ####--UI--------------------------------------------------------------------------------------------
 navbarPage(
   # Give the page a title
-  title = "Suicidal tendency detection"
+  title = "Distress Sentiment Classification - by Susheel Patel"
+  
   
   ,tags$style(type = 'text/css',
               '.navbar { background-color: #6FB2D2;}',
@@ -109,13 +110,13 @@ navbarPage(
                 ,fluidRow(style = 'padding:5px', h1("Predicting behaviour based on given text."))
                 
                 ,fluidRow(h3("Try inputting a sentence or paragraph below to evaluate it with your model!"))
-                ,fluidRow(textAreaInput(inputId = "manual_prediction_input",label = "",value = "I want to die. I lost will. Death, kill."))
+                ,fluidRow(textAreaInput(inputId = "manual_prediction_input",label = "",value = "I am not feeling well. I am losing motivation. I need to call someone."))
                 ,hr()
                 ,fluidRow(style = 'padding-bottom:10px', h1("Model thinks your text indicates below tendency:"))
                 ,fluidRow(column(width = 4,offset = 4,align = 'center',shinydashboard::valueBoxOutput(outputId = "model_pred_output", width = 12)))
                 ,fluidRow(h3(textOutput(outputId = "model_pred_proba")))
                 )
         )
-    )
-  )
+    ),
   
+  )
